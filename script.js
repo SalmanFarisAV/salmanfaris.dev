@@ -1,31 +1,92 @@
-const revealElements = document.querySelectorAll(
-  '.hero .content-wrap, .value-content, .stats-grid, .section-header, .project-card, .cta-section .content-wrap, .experience-section .content-wrap > h2, .timeline-item, .contact-cta, .contact-form, .links-section .content-wrap > h2, .link-item'
-);
+// Theme toggle
+const themeToggle = document.getElementById('themeToggle');
+const savedTheme = localStorage.getItem('theme');
+
+if (savedTheme === 'dark') {
+  document.documentElement.setAttribute('data-theme', 'dark');
+}
+
+themeToggle.addEventListener('click', () => {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  if (isDark) {
+    document.documentElement.removeAttribute('data-theme');
+    localStorage.setItem('theme', 'light');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+  }
+});
+
+// Custom cursor
+const cursorOuter = document.getElementById('cursorOuter');
+const cursorDot = document.getElementById('cursorDot');
+
+let mouseX = 0, mouseY = 0;
+let outerX = 0, outerY = 0;
+
+document.addEventListener('mousemove', (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+  cursorDot.style.left = mouseX + 'px';
+  cursorDot.style.top = mouseY + 'px';
+});
+
+function animateCursor() {
+  outerX += (mouseX - outerX) * 0.12;
+  outerY += (mouseY - outerY) * 0.12;
+  cursorOuter.style.left = outerX + 'px';
+  cursorOuter.style.top = outerY + 'px';
+  requestAnimationFrame(animateCursor);
+}
+animateCursor();
+
+const hoverTargets = document.querySelectorAll('a, button, .btn, .project-card, .stat-item, .link-item');
+hoverTargets.forEach((el) => {
+  el.addEventListener('mouseenter', () => cursorOuter.classList.add('hover'));
+  el.addEventListener('mouseleave', () => cursorOuter.classList.remove('hover'));
+});
+
+// Scroll reveal with varied directions
+const revealConfig = [
+  { selector: '.hero .content-wrap', direction: 'reveal-up' },
+  { selector: '.value-content', direction: 'reveal-left' },
+  { selector: '.stats-grid', direction: 'reveal-right' },
+  { selector: '.section-header', direction: 'reveal-up' },
+  { selector: '.project-card', direction: 'reveal-scale' },
+  { selector: '.cta-section .content-wrap', direction: 'reveal-up' },
+  { selector: '.experience-section .content-wrap > h2', direction: 'reveal-left' },
+  { selector: '.timeline-item', direction: 'reveal-left' },
+  { selector: '.contact-cta', direction: 'reveal-left' },
+  { selector: '.contact-form', direction: 'reveal-right' },
+  { selector: '.links-section .content-wrap > h2', direction: 'reveal-up' },
+  { selector: '.link-item', direction: 'reveal-scale' },
+];
 
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.setAttribute('data-reveal', '');
         entry.target.classList.add('visible');
         observer.unobserve(entry.target);
       }
     });
   },
-  { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
+  { threshold: 0.06, rootMargin: '0px 0px -60px 0px' }
 );
 
-revealElements.forEach((el, i) => {
-  el.setAttribute('data-reveal', '');
-  observer.observe(el);
+revealConfig.forEach(({ selector, direction }) => {
+  document.querySelectorAll(selector).forEach((el) => {
+    el.setAttribute('data-reveal', '');
+    el.classList.add(direction);
+    observer.observe(el);
+  });
 });
 
-// Stagger timeline items and link items
+// Stagger children
 const staggerGroups = document.querySelectorAll('.stagger-children');
 staggerGroups.forEach((group) => {
-  const children = group.children;
-  Array.from(children).forEach((child, i) => {
-    child.style.transitionDelay = `${i * 100}ms`;
+  Array.from(group.children).forEach((child, i) => {
+    child.style.transitionDelay = `${i * 120}ms`;
   });
 });
 
@@ -55,10 +116,9 @@ sections.forEach((section) => navObserver.observe(section));
 const bgTexts = document.querySelectorAll('.bg-text, .hero-bg-text');
 
 function updateParallax() {
-  const scrollY = window.scrollY;
   bgTexts.forEach((el) => {
     const rect = el.parentElement.getBoundingClientRect();
-    const speed = 0.05;
+    const speed = 0.04;
     const offset = (rect.top + rect.height / 2) * speed;
     el.style.transform = `translateY(${offset}px)`;
   });
@@ -68,6 +128,7 @@ function updateParallax() {
 if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   requestAnimationFrame(updateParallax);
 }
+
 
 // Contact form submission via Web3Forms
 const contactForm = document.getElementById('contactForm');
