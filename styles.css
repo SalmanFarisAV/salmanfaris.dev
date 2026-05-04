@@ -706,7 +706,8 @@ a {
 .link-item[data-brand="linkedin"]::before { background: #0077b5; }
 .link-item[data-brand="github"]::before { background: #333; }
 .link-item[data-brand="email"]::before { background: #ea4335; }
-.link-item[data-brand="phone"]::before { background: #25d366; }
+.link-item[data-brand="instagram"]::before { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+.link-item[data-brand="whatsapp"]::before { background: #25d366; }
 .link-item[data-brand="resume"]::before { background: var(--accent); }
 
 .link-icon {
