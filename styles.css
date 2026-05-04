@@ -24,8 +24,12 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
 }
 
 body {
@@ -516,9 +520,8 @@ a {
 }
 
 .experience-bg-text {
-  top: 50%;
+  top: 80px;
   right: 40px;
-  transform: translateY(-50%);
   font-size: clamp(10rem, 22vw, 20rem);
   line-height: 0.8;
 }
