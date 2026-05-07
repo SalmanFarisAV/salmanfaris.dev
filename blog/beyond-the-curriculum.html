@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A personal letter to juniors — on the mistakes we made, the lessons we learned, and why starting early with hackathons changed everything."
+    />
+    <meta name="author" content="Salman Faris A V" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0f172a" />
+    <link
+      rel="canonical"
+      href="https://salmanfaris.dev/blog/beyond-the-curriculum.html"
+    />
+    <title>
+      Beyond the Curriculum: Lessons We Learned Too Late | Salman Faris A V
+    </title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Beyond the Curriculum: Lessons We Learned Too Late"
+    />
+    <meta
+      property="og:description"
+      content="A personal letter to juniors — on the mistakes we made, the lessons we learned, and why starting early with hackathons changed everything."
+    />
+    <meta
+      property="og:image"
+      content="https://salmanfaris.dev/assets/blog-preview-beyond-curriculum.svg"
+    />
+    <meta
+      property="og:image:alt"
+      content="Beyond the Curriculum article preview card in white and orange theme"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:url"
+      content="https://salmanfaris.dev/blog/beyond-the-curriculum.html"
+    />
+    <meta property="og:site_name" content="Salman Faris A V" />
+    <meta property="article:published_time" content="2025-03-10" />
+    <meta property="article:author" content="Salman Faris A V" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Beyond the Curriculum: Lessons We Learned Too Late"
+    />
+    <meta
+      name="twitter:description"
+      content="A personal letter to juniors — on the mistakes we made, the lessons we learned, and why starting early with hackathons changed everything."
+    />
+    <meta
+      name="twitter:image"
+      content="https://salmanfaris.dev/assets/blog-preview-beyond-curriculum.svg"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Beyond the Curriculum article preview card in white and orange theme"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Beyond the Curriculum: Lessons We Learned Too Late",
+        "description": "A personal letter to juniors — on the mistakes we made, the lessons we learned, and why starting early with hackathons changed everything.",
+        "datePublished": "2025-03-10",
+        "dateModified": "2026-05-07",
+        "author": {
+          "@type": "Person",
+          "name": "Salman Faris A V"
+        },
+        "publisher": {
+          "@type": "Person",
+          "name": "Salman Faris A V"
+        },
+        "mainEntityOfPage": "https://salmanfaris.dev/blog/beyond-the-curriculum.html",
+        "image": "https://salmanfaris.dev/assets/blog-preview-beyond-curriculum.svg"
+      }
+    </script>
+
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <!-- Reading progress bar -->
+    <div class="reading-progress-bar" id="readingProgress"></div>
+
+    <header class="site-header">
+      <div class="content-wrap">
+        <a class="brand" href="../">Salman Faris A V</a>
+        <nav class="nav-links">
+          <a href="../#about">About</a>
+          <a href="../#projects">Projects</a>
+          <a href="../#experience">Experience</a>
+          <a href="./" class="active">Blog</a>
+          <a href="../#contact">Contact</a>
+        </nav>
+        <div class="header-right">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+          >
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <path
+                d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+              />
+            </svg>
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+            </svg>
+          </button>
+          <a class="header-cta" href="../#contact">Hire Me</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="cursor-outer" id="cursorOuter"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <main>
+      <!-- Post Hero -->
+      <section class="blog-post-hero">
+        <div class="content-wrap">
+          <a href="./" class="blog-back-link">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+            All Posts
+          </a>
+          <div class="blog-post-tags">
+            <span class="blog-post-tag">Hackathons</span>
+            <span class="blog-post-tag">Coding Club</span>
+            <span class="blog-post-tag">Student Life</span>
+          </div>
+          <h1 class="blog-post-title">
+            Beyond the Curriculum:<br />Lessons We Learned<br />Too Late
+          </h1>
+          <div class="blog-post-meta">
+            <span class="blog-post-meta-item">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+              March 10, 2025
+            </span>
+            <span class="blog-post-meta-dot"></span>
+            <span class="blog-post-meta-item">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              3 min read
+            </span>
+            <span class="blog-post-meta-dot"></span>
+            <span class="blog-post-meta-item">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+              Salman Faris A V
+            </span>
+            <button
+              id="sharePostButton"
+              class="btn btn-secondary"
+              type="button"
+              style="margin-left: auto; border-radius: 100px; display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; padding: 0"
+              aria-label="Share this blog post"
+              title="Share post"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="18" cy="5" r="3" />
+                <circle cx="6" cy="12" r="3" />
+                <circle cx="18" cy="19" r="3" />
+                <line x1="8.6" y1="13.4" x2="15.4" y2="17.6" />
+                <line x1="15.4" y1="6.4" x2="8.6" y2="10.6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Post Content -->
+      <article class="blog-post-content-wrap">
+        <div class="content-wrap">
+          <div class="blog-body">
+            <span class="blog-greeting">Hey friends,</span>
+
+            <p>
+              I'm writing this to share my thoughts and experiences — especially
+              with my juniors — so that you don't make the same mistakes we did.
+            </p>
+
+            <p>
+              Getting a job opportunity is very difficult if you only stick to
+              the curriculum. We made our first mistake by waiting until the 3rd
+              year to explore things outside academics. Looking back, we should
+              have started much earlier.
+            </p>
+
+            <p>
+              Creating a <strong>Coding Club</strong> was one of the best
+              decisions we made. It pushed us to think outside the box and step
+              beyond our textbooks. I'm not saying
+              <strong>don't follow the curriculum</strong> — but
+              <strong>don't only follow it</strong>.
+              <strong>There's an ocean of technologies</strong> out there, while
+              our curriculum still feels stuck in the Stone Age.
+              <strong>So do it for yourself. Build new skills.</strong>
+            </p>
+
+            <p>
+              We started with React by creating a simple clone website. That
+              month was intense — we spent our entire vacation, day and night,
+              debugging, discussing, and learning together. It was
+              <strong>fun, engaging, and life-changing</strong>. From there, we
+              dipped our feet into the vast ocean of technology. And trust me,
+              it helped us <strong>inside and outside academics</strong> in ways
+              we never imagined.
+            </p>
+
+            <span class="blog-lesson-label">Lesson Two</span>
+            <span class="blog-lesson-heading">Hackathons.</span>
+
+            <p>
+              We only started thinking about hackathons in our
+              <strong>last semester</strong> — and that was our second mistake.
+              We attended our <strong>first hackathon this January</strong>, and
+              it was <strong>an experience beyond words</strong>. The
+              <strong
+                >brainstorming, teamwork, expert guidance, sleepless nights, and
+                finally presenting our solution</strong
+              >
+              — it was on another level.
+            </p>
+
+            <p>
+              Luckily, we won first prize in our very first hackathon, but the
+              real prize wasn't the money — it was
+              <strong
+                >the knowledge, the connections, and the mentorship we
+                gained</strong
+              >. That day, we kept asking ourselves,
+              <em>why didn't we do this earlier?</em> We regretted not starting
+              in our <strong>first year</strong>. From then on, we got hooked
+              and started attending every hackathon we could. And every single
+              time, the experience and
+              <strong>connections got better and better</strong>.
+            </p>
+
+            <div class="blog-pull-quote">
+              "It's not about where you come from — it's about what you have. If
+              you have the interest and passion, nothing can stop you."
+            </div>
+
+            <p>
+              Before our first hackathon, we used to think,
+              <em
+                >"We're from Sreepathy, who even knows us? What can we do
+                against students from Tier 1 colleges?"</em
+              >
+              But we realized
+              <strong
+                >it's not about where you come from — it's about what you have.
+                If you have the interest and passion, nothing can stop
+                you.</strong
+              >
+            </p>
+
+            <div class="blog-callout">
+              I'm writing this because <strong>no one told us</strong> to go to
+              hackathons or what we could gain from them. But
+              <strong
+                >I'm telling you now — you have time, a precious gem we no
+                longer have.</strong
+              >
+            </div>
+
+            <p class="blog-cta-line">
+              <strong>So get up and start looking for hackathons.</strong> No
+              matter how small or big,
+              <strong>grab your team and start registering.</strong>
+            </p>
+
+            <p><em>I promise you</em> — you won't regret it.</p>
+
+            <p>
+              Before I end, I want to take this opportunity to thank
+              <strong>all our mentors and teachers</strong> who have constantly
+              supported us.
+              <strong
+                >Your support means a lot to us, and we wouldn't have come this
+                far without you.</strong
+              >
+            </p>
+
+            <p>
+              And to all my juniors — if you ever need any support from us,
+              <strong>we are always here to help</strong>. Feel free to reach
+              out anytime! 🚀
+            </p>
+
+            <p class="blog-authors-line">
+              Jishnu Vijayan, Anand Venugopalan, VIDHYA K, Sayand KK, Anirudh C,
+              Gokul C H
+            </p>
+
+            <p
+              style="margin-top: 12px; color: var(--muted); font-size: 0.95rem"
+            >
+              Now, go make the most of your time! 🤗
+            </p>
+
+            <div class="blog-hashtags">
+              <a href="#">#Hackathons</a>
+              <a href="#">#CodingClub</a>
+              <a href="#">#LearningBeyondCurriculum</a>
+              <a href="#">#Students</a>
+              <a href="#">#TechJourney</a>
+              <a href="#">#Opportunities</a>
+              <a href="#">#Gratitude</a>
+              <a href="#">#AlwaysHereToHelp</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post Footer -->
+      <section class="blog-post-footer">
+        <div class="content-wrap">
+          <!-- Author card -->
+          <div class="blog-author-card">
+            <div class="blog-author-avatar">SF</div>
+            <div class="blog-author-info">
+              <h3>Salman Faris A V</h3>
+              <p>
+                Software Development Engineer at Servespace. Full-stack
+                developer, Flutter builder, and 2× hackathon winner. I write
+                about tech, learning, and shipping things that matter.
+              </p>
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <div class="blog-footer-nav">
+            <a href="./" class="blog-back-cta">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
+              All Posts
+            </a>
+            <a
+              href="../#contact"
+              class="btn btn-primary"
+              style="border-radius: 100px"
+              >Get in Touch &rarr;</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="content-wrap">
+        <div class="footer-left">
+          <span class="footer-brand">Salman Faris A V</span>
+          <span class="footer-sub">Software Development Engineer</span>
+        </div>
+        <div class="footer-right">
+          <span>&copy; 2025. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="../script.js"></script>
+    <script>
+      // Reading progress bar
+      const progressBar = document.getElementById("readingProgress");
+      const article = document.querySelector(".blog-post-content-wrap");
+
+      function updateProgress() {
+        if (!article || !progressBar) return;
+        const articleTop = article.offsetTop;
+        const articleHeight = article.offsetHeight;
+        const scrolled = window.scrollY - articleTop + window.innerHeight * 0.5;
+        const progress = Math.min(Math.max(scrolled / articleHeight, 0), 1);
+        progressBar.style.width = progress * 100 + "%";
+      }
+
+      window.addEventListener("scroll", updateProgress, { passive: true });
+      updateProgress();
+
+      // Scroll reveal for blog post elements
+      const postRevealConfig = [
+        { selector: ".blog-post-hero .content-wrap", direction: "reveal-up" },
+        { selector: ".blog-body", direction: "reveal-up" },
+        { selector: ".blog-author-card", direction: "reveal-up" },
+        { selector: ".blog-footer-nav", direction: "reveal-up" },
+      ];
+
+      const postObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              postObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.06, rootMargin: "0px 0px -60px 0px" },
+      );
+
+      postRevealConfig.forEach(({ selector, direction }) => {
+        document.querySelectorAll(selector).forEach((el) => {
+          el.setAttribute("data-reveal", "");
+          el.classList.add(direction);
+          postObserver.observe(el);
+        });
+      });
+
+      // Share button with native share + clipboard fallback
+      const shareButton = document.getElementById("sharePostButton");
+      if (shareButton) {
+        shareButton.addEventListener("click", async () => {
+          const shareData = {
+            title: document.title,
+            text: "Beyond the Curriculum: Lessons We Learned Too Late",
+            url: window.location.href,
+          };
+
+          try {
+            if (navigator.share) {
+              await navigator.share(shareData);
+              return;
+            }
+
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              await navigator.clipboard.writeText(window.location.href);
+              const originalTitle = shareButton.getAttribute("title") || "Share post";
+              shareButton.setAttribute("title", "Link copied");
+              shareButton.setAttribute("aria-label", "Link copied");
+              setTimeout(() => {
+                shareButton.setAttribute("title", originalTitle);
+                shareButton.setAttribute("aria-label", "Share this blog post");
+              }, 1800);
+            }
+          } catch (error) {
+            // Ignore user-cancelled share errors.
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Writing and thoughts by Salman Faris A V — software developer, product builder, and hackathon enthusiast."
+    />
+    <meta name="author" content="Salman Faris A V" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="canonical" href="https://salmanfaris.dev/blog/" />
+    <title>Blog | Salman Faris A V</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Blog | Salman Faris A V" />
+    <meta
+      property="og:description"
+      content="Writing and thoughts by Salman Faris A V — software developer, product builder, and hackathon enthusiast."
+    />
+    <meta
+      property="og:image"
+      content="https://salmanfaris.dev/assets/og-image.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="Salman Faris A V blog page preview"
+    />
+    <meta property="og:url" content="https://salmanfaris.dev/blog/" />
+    <meta property="og:site_name" content="Salman Faris A V" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Blog | Salman Faris A V" />
+    <meta
+      name="twitter:description"
+      content="Writing and thoughts by Salman Faris A V — software developer, product builder, and hackathon enthusiast."
+    />
+    <meta
+      name="twitter:image"
+      content="https://salmanfaris.dev/assets/og-image.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Salman Faris A V blog page preview"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Salman Faris A V Blog",
+        "url": "https://salmanfaris.dev/blog/",
+        "description": "Writing and thoughts by Salman Faris A V — software developer, product builder, and hackathon enthusiast.",
+        "publisher": {
+          "@type": "Person",
+          "name": "Salman Faris A V"
+        }
+      }
+    </script>
+
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="content-wrap">
+        <a class="brand" href="../">Salman Faris A V</a>
+        <nav class="nav-links">
+          <a href="../#about">About</a>
+          <a href="../#projects">Projects</a>
+          <a href="../#experience">Experience</a>
+          <a href="./" class="active">Blog</a>
+          <a href="../#contact">Contact</a>
+        </nav>
+        <div class="header-right">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+          >
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <path
+                d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+              />
+            </svg>
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+            </svg>
+          </button>
+          <a class="header-cta" href="../#contact">Hire Me</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="cursor-outer" id="cursorOuter"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <main id="top">
+      <!-- Hero -->
+      <section class="blog-page-hero">
+        <div class="content-wrap">
+          <p class="blog-page-tag">Writing &bull; Thoughts &bull; Lessons</p>
+          <h1><span class="accent">Writing</span> &amp;<br />Thoughts</h1>
+          <p>
+            Personal essays, lessons from the field, and things I wish someone
+            had told me earlier.
+          </p>
+        </div>
+        <div class="blog-page-hero-bg" aria-hidden="true">Write</div>
+      </section>
+
+      <!-- Blog grid -->
+      <section class="blog-grid-section">
+        <div class="content-wrap">
+          <div class="blog-grid blog-grid-single">
+            <a href="./beyond-the-curriculum.html" class="blog-card">
+              <div class="blog-card-meta">
+                <span class="blog-card-date">March 10, 2025</span>
+                <span class="blog-card-read-time">
+                  <svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                  3 min read
+                </span>
+              </div>
+              <h2>Beyond the Curriculum: Lessons We Learned Too Late</h2>
+              <p class="blog-card-excerpt">
+                A personal letter to juniors — on the mistakes we made waiting
+                until 3rd year, the life-changing month we spent building a
+                React clone, and why you should sign up for your first hackathon
+                today. Because you have the one thing we no longer have: time.
+              </p>
+              <div class="blog-card-footer">
+                <div class="blog-card-tags">
+                  <span class="blog-card-tag">Hackathons</span>
+                  <span class="blog-card-tag">Coding Club</span>
+                  <span class="blog-card-tag">Student Life</span>
+                  <span class="blog-card-tag">Tech Journey</span>
+                </div>
+                <span class="blog-card-arrow">&nearr;</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="content-wrap">
+        <div class="footer-left">
+          <span class="footer-brand">Salman Faris A V</span>
+          <span class="footer-sub">Software Development Engineer</span>
+        </div>
+        <div class="footer-right">
+          <span>&copy; 2025. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="../script.js"></script>
+    <script>
+      // Apply reveal animations for blog page elements
+      const blogRevealConfig = [
+        { selector: ".blog-page-hero .content-wrap", direction: "reveal-up" },
+        { selector: ".blog-card", direction: "reveal-scale" },
+      ];
+
+      const blogObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              blogObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.06, rootMargin: "0px 0px -60px 0px" },
+      );
+
+      blogRevealConfig.forEach(({ selector, direction }) => {
+        document.querySelectorAll(selector).forEach((el) => {
+          el.setAttribute("data-reveal", "");
+          el.classList.add(direction);
+          blogObserver.observe(el);
+        });
+      });
+
+      // Add cursor hover for blog cards
+      const blogCards = document.querySelectorAll(".blog-card");
+      const outer = document.getElementById("cursorOuter");
+      if (outer) {
+        blogCards.forEach((el) => {
+          el.addEventListener("mouseenter", () => outer.classList.add("hover"));
+          el.addEventListener("mouseleave", () =>
+            outer.classList.remove("hover"),
+          );
+        });
+      }
+    </script>
+  </body>
+</html>

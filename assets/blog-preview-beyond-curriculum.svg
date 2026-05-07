@@ -1,0 +1,22 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#FFF9F4"/>
+  <rect x="52" y="52" width="1096" height="526" rx="28" fill="#FFFFFF" stroke="#F3D8C8" stroke-width="2"/>
+  <circle cx="110" cy="110" r="8" fill="#E8480C"/>
+  <circle cx="138" cy="110" r="8" fill="#FFC6AE"/>
+  <circle cx="166" cy="110" r="8" fill="#FFD9C7"/>
+
+  <text x="88" y="180" fill="#E8480C" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="1.5">BLOG POST</text>
+
+  <text x="88" y="252" fill="#1A1A1A" font-family="Poppins, Inter, Arial, sans-serif" font-size="62" font-weight="800">Beyond the Curriculum:</text>
+  <text x="88" y="326" fill="#1A1A1A" font-family="Poppins, Inter, Arial, sans-serif" font-size="62" font-weight="800">Lessons We Learned Too Late</text>
+
+  <rect x="88" y="372" width="740" height="2" fill="#F1E2D8"/>
+
+  <text x="88" y="426" fill="#555555" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="500">A personal letter on learning beyond curriculum,</text>
+  <text x="88" y="470" fill="#555555" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="500">coding clubs, and hackathons.</text>
+
+  <rect x="88" y="510" width="300" height="52" rx="26" fill="#E8480C"/>
+  <text x="116" y="545" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">salmanfaris.dev/blog</text>
+
+  <text x="918" y="550" fill="#E8480C" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">March 10, 2025</text>
+</svg>

@@ -53,7 +53,7 @@ function animateCursor() {
 }
 animateCursor();
 
-const hoverTargets = document.querySelectorAll('a, button, .btn, .project-card, .stat-item, .link-item');
+const hoverTargets = document.querySelectorAll('a, button, .btn, .project-card, .stat-item, .link-item, .featured-blog-card, .blog-card');
 hoverTargets.forEach((el) => {
   el.addEventListener('mouseenter', () => cursorOuter.classList.add('hover'));
   el.addEventListener('mouseleave', () => cursorOuter.classList.remove('hover'));
@@ -73,6 +73,8 @@ const revealConfig = [
   { selector: '.contact-form', direction: 'reveal-right' },
   { selector: '.links-section .content-wrap > h2', direction: 'reveal-up' },
   { selector: '.link-item', direction: 'reveal-scale' },
+  { selector: '.blog-section-header', direction: 'reveal-up' },
+  { selector: '.featured-blog-card', direction: 'reveal-scale' },
 ];
 
 const observer = new IntersectionObserver(
