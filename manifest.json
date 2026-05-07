@@ -1,0 +1,18 @@
+{
+  "name": "Salman Faris A V",
+  "short_name": "Salman Faris",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "description": "Portfolio of Salman Faris A V, a software developer in Kerala specializing in full-stack development, Flutter apps, website development, and AI-powered products.",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
