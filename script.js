@@ -12,14 +12,14 @@ function raf(time) {
 requestAnimationFrame(raf);
 
 // Theme toggle
-const themeToggle = document.getElementById('themeToggle');
 const savedTheme = localStorage.getItem('theme');
+const themeToggleButtons = document.querySelectorAll('[data-theme-toggle]');
 
 if (savedTheme === 'dark') {
   document.documentElement.setAttribute('data-theme', 'dark');
 }
 
-themeToggle.addEventListener('click', () => {
+function toggleTheme() {
   const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
   if (isDark) {
     document.documentElement.removeAttribute('data-theme');
@@ -28,7 +28,51 @@ themeToggle.addEventListener('click', () => {
     document.documentElement.setAttribute('data-theme', 'dark');
     localStorage.setItem('theme', 'dark');
   }
+}
+
+themeToggleButtons.forEach((button) => {
+  button.addEventListener('click', toggleTheme);
 });
+
+// Mobile menu
+const mobileMenuToggle = document.querySelector('[data-mobile-menu-toggle]');
+const mobileMenuPanel = document.querySelector('[data-mobile-menu-panel]');
+const mobileMenuOverlay = document.querySelector('[data-mobile-menu-overlay]');
+const mobileMenuClose = document.querySelector('[data-mobile-menu-close]');
+const mobileMenuLinks = document.querySelectorAll('[data-mobile-menu-link]');
+
+function setMobileMenuOpen(isOpen) {
+  if (!mobileMenuToggle || !mobileMenuPanel || !mobileMenuOverlay) return;
+
+  mobileMenuToggle.setAttribute('aria-expanded', String(isOpen));
+  mobileMenuPanel.setAttribute('aria-hidden', String(!isOpen));
+  mobileMenuPanel.classList.toggle('is-open', isOpen);
+  mobileMenuOverlay.classList.toggle('is-open', isOpen);
+  document.body.classList.toggle('menu-open', isOpen);
+}
+
+if (mobileMenuToggle && mobileMenuPanel && mobileMenuOverlay) {
+  mobileMenuToggle.addEventListener('click', () => {
+    const isOpen = mobileMenuPanel.classList.contains('is-open');
+    setMobileMenuOpen(!isOpen);
+  });
+
+  mobileMenuOverlay.addEventListener('click', () => setMobileMenuOpen(false));
+
+  if (mobileMenuClose) {
+    mobileMenuClose.addEventListener('click', () => setMobileMenuOpen(false));
+  }
+
+  mobileMenuLinks.forEach((link) => {
+    link.addEventListener('click', () => setMobileMenuOpen(false));
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      setMobileMenuOpen(false);
+    }
+  });
+}
 
 // Custom cursor
 const cursorOuter = document.getElementById('cursorOuter');
