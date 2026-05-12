@@ -8,7 +8,10 @@
       content="A personal letter to juniors — on the mistakes we made, the lessons we learned, and why starting early with hackathons changed everything."
     />
     <meta name="author" content="Salman Faris A V" />
-    <meta name="robots" content="index, follow" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
     <meta name="theme-color" content="#0f172a" />
     <link
       rel="canonical"
@@ -69,21 +72,76 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "headline": "Beyond the Curriculum: Lessons We Learned Too Late",
-        "description": "A personal letter to juniors — on the mistakes we made, the lessons we learned, and why starting early with hackathons changed everything.",
-        "datePublished": "2025-03-10",
-        "dateModified": "2026-05-07",
-        "author": {
-          "@type": "Person",
-          "name": "Salman Faris A V"
-        },
-        "publisher": {
-          "@type": "Person",
-          "name": "Salman Faris A V"
-        },
-        "mainEntityOfPage": "https://salmanfaris.dev/blog/beyond-the-curriculum.html",
-        "image": "https://salmanfaris.dev/assets/blog-preview-beyond-curriculum.png?v=20260507"
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://salmanfaris.dev/#person",
+            "name": "Salman Faris A V",
+            "alternateName": ["Salman Faris", "Salman Faris AV"],
+            "url": "https://salmanfaris.dev/"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://salmanfaris.dev/#website",
+            "name": "Salman Faris A V",
+            "alternateName": "Salman Faris",
+            "url": "https://salmanfaris.dev/",
+            "publisher": { "@id": "https://salmanfaris.dev/#person" }
+          },
+          {
+            "@type": "Blog",
+            "@id": "https://salmanfaris.dev/blog/#blog",
+            "name": "Salman Faris A V Blog",
+            "url": "https://salmanfaris.dev/blog/",
+            "publisher": { "@id": "https://salmanfaris.dev/#person" },
+            "isPartOf": { "@id": "https://salmanfaris.dev/#website" }
+          },
+          {
+            "@type": "BlogPosting",
+            "@id": "https://salmanfaris.dev/blog/beyond-the-curriculum.html#article",
+            "headline": "Beyond the Curriculum: Lessons We Learned Too Late",
+            "description": "A personal letter to juniors — on the mistakes we made, the lessons we learned, and why starting early with hackathons changed everything.",
+            "datePublished": "2025-03-10",
+            "dateModified": "2026-05-12",
+            "url": "https://salmanfaris.dev/blog/beyond-the-curriculum.html",
+            "inLanguage": "en-IN",
+            "author": { "@id": "https://salmanfaris.dev/#person" },
+            "publisher": { "@id": "https://salmanfaris.dev/#person" },
+            "isPartOf": { "@id": "https://salmanfaris.dev/blog/#blog" },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://salmanfaris.dev/blog/beyond-the-curriculum.html"
+            },
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://salmanfaris.dev/assets/blog-preview-beyond-curriculum.png"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://salmanfaris.dev/blog/beyond-the-curriculum.html#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://salmanfaris.dev/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://salmanfaris.dev/blog/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Beyond the Curriculum: Lessons We Learned Too Late",
+                "item": "https://salmanfaris.dev/blog/beyond-the-curriculum.html"
+              }
+            ]
+          }
+        ]
       }
     </script>
 
@@ -182,19 +240,19 @@
       <!-- Post Hero -->
       <section class="blog-post-hero">
         <div class="content-wrap">
-          <a href="./" class="blog-back-link">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.5"
-            >
-              <polyline points="15 18 9 12 15 6" />
-            </svg>
-            All Posts
-          </a>
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <ol>
+              <li>
+                <a href="https://salmanfaris.dev/">Home</a>
+              </li>
+              <li>
+                <a href="https://salmanfaris.dev/blog/">Blog</a>
+              </li>
+              <li aria-current="page">
+                Beyond the Curriculum: Lessons We Learned Too Late
+              </li>
+            </ol>
+          </nav>
           <div class="blog-post-tags">
             <span class="blog-post-tag">Hackathons</span>
             <span class="blog-post-tag">Coding Club</span>

@@ -8,7 +8,10 @@
       content="Writing and thoughts by Salman Faris A V — software developer, product builder, and hackathon enthusiast."
     />
     <meta name="author" content="Salman Faris A V" />
-    <meta name="robots" content="index, follow" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
     <meta name="theme-color" content="#0f172a" />
     <link rel="canonical" href="https://salmanfaris.dev/blog/" />
     <title>Blog | Salman Faris A V</title>
@@ -50,14 +53,51 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Blog",
-        "name": "Salman Faris A V Blog",
-        "url": "https://salmanfaris.dev/blog/",
-        "description": "Writing and thoughts by Salman Faris A V — software developer, product builder, and hackathon enthusiast.",
-        "publisher": {
-          "@type": "Person",
-          "name": "Salman Faris A V"
-        }
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://salmanfaris.dev/#person",
+            "name": "Salman Faris A V",
+            "alternateName": ["Salman Faris", "Salman Faris AV"],
+            "url": "https://salmanfaris.dev/"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://salmanfaris.dev/#website",
+            "name": "Salman Faris A V",
+            "alternateName": "Salman Faris",
+            "url": "https://salmanfaris.dev/",
+            "publisher": { "@id": "https://salmanfaris.dev/#person" }
+          },
+          {
+            "@type": "Blog",
+            "@id": "https://salmanfaris.dev/blog/#blog",
+            "name": "Salman Faris A V Blog",
+            "url": "https://salmanfaris.dev/blog/",
+            "description": "Writing and thoughts by Salman Faris A V — software developer, product builder, and hackathon enthusiast.",
+            "inLanguage": "en-IN",
+            "publisher": { "@id": "https://salmanfaris.dev/#person" },
+            "isPartOf": { "@id": "https://salmanfaris.dev/#website" }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://salmanfaris.dev/blog/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://salmanfaris.dev/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://salmanfaris.dev/blog/"
+              }
+            ]
+          }
+        ]
       }
     </script>
 
@@ -153,6 +193,14 @@
       <!-- Hero -->
       <section class="blog-page-hero">
         <div class="content-wrap">
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <ol>
+              <li>
+                <a href="https://salmanfaris.dev/">Home</a>
+              </li>
+              <li aria-current="page">Blog</li>
+            </ol>
+          </nav>
           <p class="blog-page-tag">Writing &bull; Thoughts &bull; Lessons</p>
           <h1><span class="accent">Writing</span> &amp;<br />Thoughts</h1>
           <p>

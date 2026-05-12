@@ -17,7 +17,7 @@
     <meta property="og:description" content="Salman Faris A V is a software developer in Kerala specializing in full-stack development, Flutter apps, website development, and AI-powered products in Kerala." />
     <meta property="og:image" content="https://salmanfaris.dev/assets/og-image.png" />
     <meta property="og:image:alt" content="Salman Faris A V portfolio preview featuring software development, Flutter, and full-stack work." />
-    <meta property="og:url" content="https://salmanfaris.dev" />
+    <meta property="og:url" content="https://salmanfaris.dev/" />
     <meta property="og:site_name" content="Salman Faris A V" />
     <meta property="og:locale" content="en_IN" />
 
@@ -36,7 +36,9 @@
         "@graph": [
           {
             "@type": "Person",
+            "@id": "https://salmanfaris.dev/#person",
             "name": "Salman Faris A V",
+            "alternateName": ["Salman Faris", "Salman Faris AV"],
             "url": "https://salmanfaris.dev/",
             "image": "https://salmanfaris.dev/assets/og-image.png",
             "jobTitle": "Software Engineer",
@@ -55,10 +57,13 @@
           },
           {
             "@type": "WebSite",
+            "@id": "https://salmanfaris.dev/#website",
             "name": "Salman Faris A V",
+            "alternateName": "Salman Faris",
             "url": "https://salmanfaris.dev/",
             "description": "Portfolio of Salman Faris A V, a software developer in Kerala.",
-            "inLanguage": "en-IN"
+            "inLanguage": "en-IN",
+            "publisher": { "@id": "https://salmanfaris.dev/#person" }
           },
           {
             "@type": "ProfessionalService",
@@ -466,6 +471,8 @@
           <span class="footer-sub">Software Development Engineer</span>
         </div>
         <div class="footer-right">
+          <a class="footer-inline-link" href="https://salmanfaris.dev/blog/">Blog</a>
+          <span class="footer-inline-sep" aria-hidden="true">·</span>
           <span>&copy; 2025. All rights reserved.</span>
         </div>
       </div>

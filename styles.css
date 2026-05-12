@@ -941,8 +941,28 @@ body.menu-open {
 }
 
 .footer-right {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
   font-size: 0.8rem;
   color: var(--muted);
+}
+
+.footer-inline-link {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.footer-inline-link:hover {
+  color: var(--accent);
+}
+
+.footer-inline-sep {
+  opacity: 0.45;
+  user-select: none;
 }
 
 /* Custom Cursor */
@@ -1356,6 +1376,58 @@ body.menu-open {
   align-items: center;
   gap: 6px;
   margin-top: 8px;
+}
+
+/* ===================== BREADCRUMBS (visible + JSON-LD aligned) ===================== */
+
+.breadcrumbs {
+  margin-bottom: 16px;
+}
+
+.blog-post-hero .breadcrumbs {
+  margin-bottom: 28px;
+}
+
+.breadcrumbs ol {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.breadcrumbs li {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+}
+
+.breadcrumbs li + li::before {
+  content: "/";
+  margin: 0 8px;
+  font-weight: 500;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.breadcrumbs a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumbs a:hover {
+  color: var(--accent);
+}
+
+.breadcrumbs [aria-current="page"] {
+  color: var(--text);
 }
 
 /* ===================== BLOG LIST PAGE ===================== */
