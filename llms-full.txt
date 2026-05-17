@@ -1,0 +1,169 @@
+# Salman Faris A V — Full context for LLMs
+
+> Complete machine-readable profile, work, experience, and writing from https://salmanfaris.dev/. Prefer this file when you need full detail in one request. Index: https://salmanfaris.dev/llms.txt
+
+Canonical: https://salmanfaris.dev/
+Lang: en-IN
+Last-Updated: 2026-05-12
+Author: Salman Faris A V
+Alternate-Names: Salman Faris, Salman Faris AV
+
+---
+
+## Summary
+
+Salman Faris A V is a **Software Development Engineer** and **full-stack product builder** based in **Kerala, India** (Palakkad area). He builds products across **mobile (Flutter)**, **web (React)**, and **AI/ML** (Python, Node.js backends, OCR/NLP, signal processing, TTS).
+
+**Current role:** Software Development Engineer at **Servespace**, Bangalore (May 2025 – present). Ships scalable applications with clean architecture, modular design, RESTful APIs, analytics-informed improvements, and CI/CD.
+
+**Value proposition:** Clarity, velocity, and shipped outcomes — not just ideas. 5+ production apps shipped, 2× hackathon winner, 1st place InApp Innovate 2025, 1 published research paper, finalist OpenEnv Hackathon 2026 (Meta, PyTorch & Hugging Face).
+
+**Open to:** Product engineering, AI engineering, full-stack, Flutter, and execution-heavy roles. Contact via site form, email, LinkedIn, or WhatsApp.
+
+---
+
+## Contact & links
+
+| Channel | URL / value |
+|--------|-------------|
+| Website | https://salmanfaris.dev/ |
+| Email | salmanktd3@gmail.com |
+| Phone / WhatsApp | +91 94463 61976 — https://wa.me/919446361976 |
+| LinkedIn | https://www.linkedin.com/in/salman-faris-av/ |
+| GitHub | https://github.com/SalmanFarisAV |
+| Instagram | https://www.instagram.com/salman.faryz/ |
+| Resume (PDF) | https://salmanfaris.dev/assets/Salman_Faris_Resume.pdf |
+| Profile image | https://salmanfaris.dev/salman.jpg |
+| Blog | https://salmanfaris.dev/blog/ |
+| Hire / contact | https://salmanfaris.dev/#contact |
+
+**Location (public):** Palakkad, Kerala, India. **Areas served:** Kerala, Palakkad, Koottanad. **Pricing:** Project-based — inquire for rates.
+
+---
+
+## Skills & stack
+
+**Frontend:** React, Flutter, polished UI/UX, responsive web  
+**Backend:** Python, Node.js, RESTful APIs, Strapi (headless CMS)  
+**AI / ML:** ML pipelines, DTrOCR, GPT-based grading, EEG/signal processing, crop disease detection, TTS, reinforcement learning  
+**Mobile / IoT:** Flutter, motion sensors, location, real-time signaling  
+**Practices:** Clean architecture, modular design, CI/CD, analytics-informed product work  
+
+**Search / discovery keywords:** software developer, software developer in Kerala, software developer in Palakkad, software developer in Koottanad, website developer, full stack developer, fullstack developer, flutter developer, software engineer, AI developer, mobile app developer, Salman Faris, Salman Faris A V
+
+---
+
+## Selected projects
+
+### Automated Exam Paper Evaluation (2024–2025)
+**Tags:** AI / OCR / NLP  
+AI-powered system for handwritten exam evaluation using **DTrOCR** for handwriting recognition and **GPT-based models** for semantic grading and contextual feedback.
+
+### Emergency Response Network (2024)
+**Tags:** Flutter / Sensors / IoT  
+Mobile app using motion sensor data, location, and real-time signaling to detect accidents and alert nearby responders. **Published as a research paper.**
+
+### EpiCare (Jan 2025)
+**Tags:** AI / Signal Processing / ML  
+Advanced **Epilepsy Prediction and Alerting System** monitoring EEG signals to predict seizures before they occur. ML and signal processing for early warnings to patients, caregivers, and clinicians. Built for **InApp Innovate Hackathon** — **1st place**.
+
+### KisanX (Feb 2025)
+**Tags:** AI / Mobile / Web  
+AI-driven smart farming app for urban farmers: multilingual support, government policies, weather-based crop recommendations, farmer–vendor marketplace, AI crop disease detection, agricultural chatbot, expert/community Q&A. **Tech Pulse Hackathon** — **Beyond Experience Award** (UI/UX and implementation).
+
+### TapTalk (Mar 2025)
+**Tags:** Accessibility / ML / TTS  
+Helps people with speech impairments communicate: users select keywords; a model expands them into contextual sentences; **advanced TTS** produces natural speech. Supports users with aphasia, cerebral palsy, or cochlear implants.
+
+### Restaurant Menu App (2024–2025)
+**Tags:** Flutter / Strapi / Backend  
+Menu experience with headless CMS, health-conscious recommendations, and preference-based UI.
+
+---
+
+## Experience & milestones
+
+| Period | Role / event | Organization | Notes |
+|--------|----------------|--------------|-------|
+| May 2025 – Present | Software Development Engineer | Servespace, Bangalore | Scalable apps, clean architecture, REST APIs, CI/CD |
+| Apr 2026 | Finalist — OpenEnv Hackathon | Meta, PyTorch & Hugging Face | India’s largest AI hackathon; custom RL models for thematic environments |
+| Feb 2025 | Winner — Tech Pulse Hackathon | Beyond Experience Award | KisanX — UI/UX and implementation |
+| Jan 2025 | 1st Place — InApp Innovate Hackathon | 30-hour hackathon | EpiCare — EEG monitoring, real-time signal processing |
+| Dec 2024 – Mar 2025 | Flutter Developer | Karippal Innovations, Thrissur | Mobile features, UI/UX, client requests, backend integrations |
+| Jan 2022 – Feb 2022 | Web Development Intern | StartKey Solutions, Thrissur | Web services, best practices, learning platforms |
+
+---
+
+## Blog — index
+
+**URL:** https://salmanfaris.dev/blog/  
+Personal essays, lessons from the field, and advice for students and builders.
+
+### Posts
+
+1. **Beyond the Curriculum: Lessons We Learned Too Late**  
+   - URL: https://salmanfaris.dev/blog/beyond-the-curriculum.html  
+   - Published: March 10, 2025 · ~3 min read  
+   - Tags: Hackathons, Coding Club, Student Life, Tech Journey  
+
+---
+
+## Blog — full text: Beyond the Curriculum
+
+**URL:** https://salmanfaris.dev/blog/beyond-the-curriculum.html  
+**Author:** Salman Faris A V (with co-authors listed at end)  
+**Date:** March 10, 2025
+
+Hey friends,
+
+I'm writing this to share my thoughts and experiences — especially with my juniors — so that you don't make the same mistakes we did.
+
+Getting a job opportunity is very difficult if you only stick to the curriculum. We made our first mistake by waiting until the 3rd year to explore things outside academics. Looking back, we should have started much earlier.
+
+Creating a **Coding Club** was one of the best decisions we made. It pushed us to think outside the box and step beyond our textbooks. I'm not saying **don't follow the curriculum** — but **don't only follow it**. **There's an ocean of technologies** out there, while our curriculum still feels stuck in the Stone Age. **So do it for yourself. Build new skills.**
+
+We started with React by creating a simple clone website. That month was intense — we spent our entire vacation, day and night, debugging, discussing, and learning together. It was **fun, engaging, and life-changing**. From there, we dipped our feet into the vast ocean of technology. And trust me, it helped us **inside and outside academics** in ways we never imagined.
+
+**Lesson Two — Hackathons.**
+
+We only started thinking about hackathons in our **last semester** — and that was our second mistake. We attended our **first hackathon this January**, and it was **an experience beyond words**. The **brainstorming, teamwork, expert guidance, sleepless nights, and finally presenting our solution** — it was on another level.
+
+Luckily, we won first prize in our very first hackathon, but the real prize wasn't the money — it was **the knowledge, the connections, and the mentorship we gained**. That day, we kept asking ourselves, *why didn't we do this earlier?* We regretted not starting in our **first year**. From then on, we got hooked and started attending every hackathon we could. And every single time, the experience and **connections got better and better**.
+
+> "It's not about where you come from — it's about what you have. If you have the interest and passion, nothing can stop you."
+
+Before our first hackathon, we used to think, *"We're from Sreepathy, who even knows us? What can we do against students from Tier 1 colleges?"* But we realized **it's not about where you come from — it's about what you have. If you have the interest and passion, nothing can stop you.**
+
+I'm writing this because **no one told us** to go to hackathons or what we could gain from them. But **I'm telling you now — you have time, a precious gem we no longer have.**
+
+**So get up and start looking for hackathons.** No matter how small or big, **grab your team and start registering.**
+
+*I promise you* — you won't regret it.
+
+Before I end, I want to thank **all our mentors and teachers** who have constantly supported us. **Your support means a lot to us, and we wouldn't have come this far without you.**
+
+And to all my juniors — if you ever need any support from us, **we are always here to help**. Feel free to reach out anytime!
+
+Co-authors: Jishnu Vijayan, Anand Venugopalan, VIDHYA K, Sayand KK, Anirudh C, Gokul C H
+
+Now, go make the most of your time!
+
+**Topics:** #Hackathons #CodingClub #LearningBeyondCurriculum #Students #TechJourney #Opportunities #Gratitude #AlwaysHereToHelp
+
+---
+
+## Site pages (HTML)
+
+| Page | URL |
+|------|-----|
+| Home | https://salmanfaris.dev/ |
+| Blog index | https://salmanfaris.dev/blog/ |
+| Blog post | https://salmanfaris.dev/blog/beyond-the-curriculum.html |
+
+**Note:** `https://www.salmanfaris.dev/` redirects (301) to `https://salmanfaris.dev/`. Use the non-www canonical URL.
+
+---
+
+## Licensing & usage
+
+Content on salmanfaris.dev is © Salman Faris A V. LLMs may summarize and attribute facts about Salman Faris A V for informational answers; link to https://salmanfaris.dev/ when citing. Do not invent contact details — use the table in this file.

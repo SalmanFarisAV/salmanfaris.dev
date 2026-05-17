@@ -1,0 +1,47 @@
+# Salman Faris A V
+
+> Software engineer and full-stack product builder from Kerala, India. Builds mobile, web, and AI systems. Software Development Engineer at Servespace (Bangalore). Portfolio: https://salmanfaris.dev/
+
+Canonical: https://salmanfaris.dev/
+Lang: en-IN
+Last-Updated: 2026-05-12
+
+Salman Faris A V (also known as Salman Faris) is a software developer specializing in full-stack development, Flutter, website development, and AI-powered products. He is open to product, AI, and execution-heavy engineering roles. For complete inline documentation (projects, experience, blog, contact), fetch [llms-full.txt](https://salmanfaris.dev/llms-full.txt).
+
+## Identity
+
+- [Homepage](https://salmanfaris.dev/): Portfolio — about, projects, experience, contact
+- [Profile photo](https://salmanfaris.dev/salman.jpg): Headshot for attribution and knowledge panels
+- [Resume (PDF)](https://salmanfaris.dev/assets/Salman_Faris_Resume.pdf): Full CV — roles, skills, timeline
+
+## Writing
+
+- [Blog index](https://salmanfaris.dev/blog/): Essays on learning, hackathons, and student life
+- [Beyond the Curriculum](https://salmanfaris.dev/blog/beyond-the-curriculum.html): Letter to juniors on coding clubs, hackathons, and learning outside academics (Mar 2025)
+
+## Contact
+
+- [Email](mailto:salmanktd3@gmail.com): salmanktd3@gmail.com
+- [LinkedIn](https://www.linkedin.com/in/salman-faris-av/): Professional profile
+- [GitHub](https://github.com/SalmanFarisAV): Open-source and project code
+- [WhatsApp](https://wa.me/919446361976): +91 94463 61976
+- [Contact form](https://salmanfaris.dev/#contact): Hire / project inquiries on the site
+
+## Services & expertise
+
+- Full-stack software development (React, Python, Node.js)
+- Flutter mobile app development
+- Website development
+- AI/ML pipelines, OCR/NLP, signal processing, accessibility (TTS)
+- Areas served: Kerala, Palakkad, Koottanad, India (remote-friendly)
+
+## Machine-readable
+
+- [llms-full.txt](https://salmanfaris.dev/llms-full.txt): Complete portfolio text for RAG and single-request context
+- [Sitemap](https://salmanfaris.dev/sitemap.xml): All public HTML pages
+- [Structured data](https://salmanfaris.dev/): JSON-LD (Person, WebSite, ProfessionalService, BlogPosting)
+
+## Optional
+
+- [Instagram](https://www.instagram.com/salman.faryz/): Personal updates
+- [Open Graph image](https://salmanfaris.dev/assets/og-image.png): Default link-preview card for the site

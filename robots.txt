@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# LLM-readable site summary (https://llmstxt.org/)
+# https://salmanfaris.dev/llms.txt
+# https://salmanfaris.dev/llms-full.txt
+
 Sitemap: https://salmanfaris.dev/sitemap.xml
